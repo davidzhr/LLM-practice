@@ -1,2 +1,3 @@
 # LLM-practice
-some practice for LLM， including transformer
+
+The purpose of this repo is to record my learning log in LLM field. It include 

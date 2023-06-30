@@ -1,0 +1,16 @@
+
+Here  we try milvus and log some practice.
+
+# 1 start up the milvus server in development env.
+
+> milvus-server --debug --data d:\milvus_data  --system-log-level debug --proxy-port 19531
+
+--debug: parameter indicates we use debug mode.
+
+--data: specify the local disk path, used to store the log, index file etc.
+
+--system-log-level: set the log level
+
+--proxy-port: specify the listen port for connection.
+
+
