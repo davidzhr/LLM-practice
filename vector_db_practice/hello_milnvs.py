@@ -1,8 +1,17 @@
 # This  example is from https://milvus.io/docs/example_code.md .
+# when i try this example, i have not set the password for milvus server.
+# so if you have set a user and password, you should use below format to connect the server.
+# connections.connect(
+#   alias="default",
+#   user='username',
+#   password='password',
+#   host='localhost',
+#   port='19530'
+# )
 
-from milvus import default_server
 
 from pymilvus import (
+    default_server,
     connections,
     utility,
     FieldSchema,
@@ -13,7 +22,9 @@ from pymilvus import (
 
 import random
 
-# connect the local milvus server
+default_server.set_base_dir('milvus_data')
+
+# connect the local milvus server, here the port is 15931, you should know the default port is 15930. 
 connections.connect(host='127.0.0.1', port=19531)
 print(utility.get_server_version())
 
