@@ -4,6 +4,7 @@ from pymilvus import db
 # create the connection
 conn = connections.connect(host="127.0.0.1", port=19531)
 
+
 # create the db
 database = db.create_database("books")
 

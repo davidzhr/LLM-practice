@@ -11,7 +11,6 @@
 
 
 from pymilvus import (
-    default_server,
     connections,
     utility,
     FieldSchema,
@@ -20,9 +19,9 @@ from pymilvus import (
     Collection,
 )
 
+
 import random
 
-default_server.set_base_dir('milvus_data')
 
 # connect the local milvus server, here the port is 15931, you should know the default port is 15930. 
 connections.connect(host='127.0.0.1', port=19531)
